@@ -1,0 +1,32 @@
+[meu-atributo="value"] {
+    /*attribute selector - seleciona todos os elementos que possuem um atributo especificado*/
+    /*[meu-atributo="valor"] - seleciona todos os elementos que possuem o atributo meu-atributo com o valor "valor"*/
+    color: blue;
+}
+
+[meu-atributo~="value2"] {
+    /*Usando o ~ para selecionar elementos que contenham o valor especificado (Separado por espaços)*/
+    /*[meu-atributo~="value2"] - seleciona todos os elementos que possuem o atributo meu-atributo com o valor "value2"*/
+    color: cyan;
+}
+
+[meu-atributo|="qualquercoisa"] {
+    /*Usando | para selecionar elementos que contenham o valor especificado (Apos o -)*/
+    /*[meu-atributo|="qualquercoisa"] - seleciona todos os elementos que possuem o atributo meu-atributo com o valor "qualquercoisa"*/
+    color: red;
+}
+
+[meu-atributo^="qualquercoisa"] {
+    /*Usando ^ para selecionar elementos que contenham o valor especificado (Começa com)*/
+    color: yellow;
+}
+
+[meu-atributo$="123"] {
+    /*Usando $ para selecionar elementos que contenham o valor especificado (Termina com)*/
+    color: green;
+}
+
+[meu-atributo*="ue-a"] {
+    /*Usando $ para selecionar elementos que contenham o valor especificado (Contem)*/
+    color: blueviolet;
+}

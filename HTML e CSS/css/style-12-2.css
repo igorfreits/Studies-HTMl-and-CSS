@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.father h1+p {
+    /*adjacent sibling selector - seleciona o elemento imediatamente seguinte ao elemento selecionado*/
+    color: chocolate;
+}
+
+.father h1~p {
+    /*general sibling selector - seleciona todos os elementos que estão imediatamente após o elemento selecionado*/
+    color: limegreen;
+}
+
+.number .one~.two {
+    /*general sibling selector - seleciona todos os elementos que estão imediatamente após o elemento selecionado*/
+    color: red;
+}
+
+[meu-atributo="valor"] {
+    /*attribute selector - seleciona todos os elementos que possuem um atributo especificado*/
+    /*[meu-atributo="valor"] - seleciona todos os elementos que possuem o atributo meu-atributo com o valor "valor"*/
+    color: cyan;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
