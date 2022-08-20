@@ -1,0 +1,65 @@
+/*aula-162 */
+* {
+    /*Select all elements*/
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    /*Select all elements with tag p*/
+    color: red;
+
+}
+
+body div section p,
+body div section h1 {
+    /*Select all elements with tag p and h1 inside body div section*/
+    color: darkblue;
+}
+
+.heading {
+    /*Select all elements with class "heading"*/
+    color: green;
+}
+
+.main-content h2 {
+    /*Select all elements with tag h2 inside class "main-content"*/
+    font-style: italic;
+}
+
+.main-content .description {
+    /*Select all elements with class "description" inside class "main-content"*/
+    font-weight: bold;
+}
+
+body div.main-content h2.page-header {
+    /*Select all elements with tag h2 and class "page-header" inside body div.main-content*/
+    font-style: italic;
+    color: aquamarine;
+}
+
+div {
+    /*remove inheritance*/
+    color: initial;
+    margin-left: 20px;
+}
+
+.father {
+    /*Select all elements with class "father" and inherit to class "daughter"*/
+    color: palevioletred;
+}
+
+.father .daughter {
+    /*Select all elements with class "daughter" inside class "father"*/
+    color: red;
+}
+
+.father>.daughter {
+    /*Select all elements with class "daughter" inside class "father"*/
+    color: blueviolet;
+}
+
+.father>.daughter>.grandson {
+    /*Select all elements with class "grandson" inside class "daughter" inside class "father"*/
+    color: orange
+}
