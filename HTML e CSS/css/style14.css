@@ -1,0 +1,69 @@
+.heading {
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+    /*Quando o mouse passar por cima*/
+    background: darkslategray;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    /*Muda a cor do link quando não for visitado*/
+    color: deeppink;
+}
+
+a:visited {
+    /*Muda a cor do link quando for visitado*/
+    color: firebrick;
+}
+
+a:hover {
+    /*Quando o mouse passar por cima*/
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    /*Muda a cor do link quando estiver ativo*/
+    background: darkslategray;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+input:focus {
+    /*Quando o input estiver focado*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:checked+p {
+    /*Quando o input estiver marcado*/
+    background: gray;
+}
+
+input:not(:checked)+p {
+    /*Quando o input estiver marcado*/
+    background: yellow;
+}
+
+.father .list li:last-child {
+    /*Quando o elemento for o último*/
+    background: red;
+}
+
+input:required {
+    /*Quando o input for obrigatório*/
+    background: blueviolet;
+}
+
+p:not(.mid) {
+    /*Todos os elementos,menos a classe selecionada */
+    /*Quando o elemento não for a classe selecionada*/
+    color: blue;
+}
