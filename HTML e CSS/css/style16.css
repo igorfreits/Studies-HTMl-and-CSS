@@ -1,0 +1,15 @@
+/*Herança e as propriedades que são passadas para elementos filhos*/
+
+#text {
+    /* Os elementos filhos herdam as propriedades do elemento pai*/
+    font-family: sans-serif;
+    color: red;
+    font-size: 50px;
+}
+
+p {
+    /*inherit = herda as propriedades do elemento pai*/
+    /*initial = define as propriedades iniciais(Desabilita a herança*/
+    font-size: inherit;
+    color: initial;
+}

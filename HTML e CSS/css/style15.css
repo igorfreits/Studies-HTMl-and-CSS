@@ -1,0 +1,54 @@
+/*
+ID class, atributos e pseudo-classes, elements e pseudo-elements
+style - Maior prioridade
+!important - Força o valor do atributo
+
+especificidade
+empate
+style
+!important
+*/
+
+p {
+    background: slateblue !important;
+}
+
+body#c.d p#b.a::selection {
+    /* ID + ID + class + class + tags + tags + pseudo-element - 2, 2, 3*/
+    background: pink;
+}
+
+body#c.d p#b.a::selection:hover {
+    /* ID + ID + class + class + tags + tags + pseudo-element + pseudo-class - 2, 3, 3*/
+    background: teal;
+}
+
+#b {
+    /* ID - 1, 0, 0*/
+    background: red;
+}
+
+#b.a {
+    /* ID + class - 1, 1, 0*/
+    background: blue;
+}
+
+p#b.a {
+    /* ID + class + tags - 1, 1, 1*/
+    background: green;
+}
+
+#c p#b.a {
+    /* ID + ID + class + tags - 2, 1, 1*/
+    background: yellow;
+}
+
+body#c p#b.a {
+    /* ID + ID + class + tags + tags - 2, 1, 2*/
+    background: purple;
+}
+
+body#c.d p#b.a {
+    /* ID + ID + class + class + tags + tags - 2, 2, 2*/
+    background: orangered;
+}

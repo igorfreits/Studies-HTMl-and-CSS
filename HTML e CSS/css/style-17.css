@@ -1,0 +1,32 @@
+/*Propriedade específicas do Box-Model (largura, altura, padding, border e margin)*/
+
+/* html,
+body {
+    height: 100%;
+} */
+
+.box {
+    display: block;
+    /*inline - o elemento fica na mesma linha*/
+    /*block - o elemento fica em uma nova linha*/
+    /*inline-block - o elemento fica na mesma linha e em uma nova linha*/
+    background: linear-gradient(to right, #00bcd4, #00e5ff);
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-shadow: 1px 1px 1px black;
+    overflow: auto;
+    /*overflow - o elemento fica com o conteúdo que não caber*/
+    max-width: 500px;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 100px;
+    margin: 0 auto 50px auto;
+    /*margin - espaçamento entre os elementos*/
+    padding: 50px;
+    /*padding - espaçamento entre o conteúdo e os elementos*/
+    border: 3px solid black;
+    /*border - borda do elemento*/
+    box-sizing: border-box;
+    /*box-sizing - define o tamanho do elemento*/
+}
