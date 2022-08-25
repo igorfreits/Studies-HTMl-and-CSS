@@ -1,0 +1,66 @@
+/* Unidades de medidas no CSS (px, rem, em, vw, vh, %) */
+
+/* Medidas absolutas - Sempre será a medida especificada*/
+/* Medidas relativas - A medida é calculada em relação a outra medida (Padrão dos navegadores)*/
+html {
+    font-size: 62.5%;
+    /* % - Usa a medida padrão do navegador (padrão 16px)*/
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.father {
+    font-size: 50px;
+    /* width: 30rem;
+    height: 30rem; */
+    background: cyan;
+    overflow: hidden;
+    width: 50rem;
+    /* 500px */
+
+    /* width: 100vw; */
+    /* vw - Relativo a 1% da largura da janela de visualização. Se tiver 50 cm de largura, 1vw = 0,5 cm */
+
+    height: 100vh;
+    /* vh - Relativo a 1% da altura da janela de visualização. Se tiver 50 cm de altura, 1vh = 0,5 cm */
+
+}
+
+.father>div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
+p {
+    font-size: 0.5em;
+    /*em - relação ao tamanho da fonte do elemento (2em significa 2 vezes o tamanho da fonte atual)*/
+    /* "50px * 0.5em = 25px" */
+}
+
+
+
+p {
+    font-size: 1rem
+        /* rem - Relativo ao tamanho da fonte do elemento raiz (html)*/
+        /* "25px * 1rem = 25px"*/
+}
+
+.color-one {
+    background: rgb(100, 25, 100);
+}
+
+p {
+    font-size: 2vmax;
+    /* vmax - Relativo a 1% da dimensão maior da janela de visualização*/
+}
+
+.color-two {
+    background: #5f1515;
+}
+
+/* vmin - Relativo a 1% da dimensão menor da janela de visualização*/

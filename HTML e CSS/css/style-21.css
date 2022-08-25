@@ -1,0 +1,24 @@
+p {
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    direction: rtl;
+
+    letter-spacing: 1px;
+    /* Espaçamento entre letras */
+    word-spacing: 5px;
+    /* Espaçamento entre palavras */
+    line-height: 25px;
+    /* Altura da linha */
+    text-align: center;
+    /* Alinhamento do texto */
+    text-decoration: underline;
+    /* Sublinhar texto */
+    text-indent: 50px;
+    text-shadow: -1px -1px 5px black;
+    /* Sombra do texto */
+    text-transform: capitalize;
+    /* Transformar a primeira letra em maiúscula */
+}
