@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to bottom, #000000 0%, #0c0042);
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    ;
+}
+
+.menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.192);
+
+}
+
+body {
+    font-family: bebas;
+}
+
+section {
+    color: white;
+}
+
+.grid {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+.full-page {
+    padding-top: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+    padding-top: 73px;
+    height: 100vh;
+    background: rgb(6, 1, 54);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    padding-top: 73px;
+    margin: 0 auto;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: inset 15px 15px 20px rgb(18, 91, 151),5px 5px 10px rgb(0, 0, 0);
+
+}
+
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:569px) and (max-width:768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1200px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .grid .col {
+        width: 25%;
+    }
+}
