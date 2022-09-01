@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bebas;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background: firebrick;
+    height: 500px;
+}
+
+.flex-item {
+    background: purple;
+    width: 100%;
+    margin: 10px;
+    box-shadow: 1px 1px 75px 3px black;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}
